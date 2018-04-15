@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Chinese-->
+    <string name="app_name">图像加密器</string>
+
+
+    <string name="tab_scramble">加密/解密</string>
+    <string name="tab_about">帮助关于</string>
+
+
+    <string name="scramble_section">加密一个图像</string>
+    <string name="scramble_button">开始</string>
+    <string name="scramble_rows"># 行</string>
+    <string name="scramble_columns"># 列</string>
+    <string name="scramble_random">随机密码</string>
+    <string name="scramble_radio_scramble">加密</string>
+    <string name="scramble_radio_descramble">解密</string>
+    <string name="scramble_show_password">显示密码</string>
+    <string name="scramble_copy_to_clipboard">复制到剪贴板</string>
+    <string name="scramble_no_camera">相机不可用</string>
+    <string name="scramble_image_width_hint">宽度</string>
+    <string name="scramble_image_height_hint">高度</string>
+    <string name="scramble_no_widthheight">输入宽度和高度解扰</string>
+    <string name="scramble_option_pre">行数和列数： %s</string>
+    <string name="scramble_options">选项: </string>
+    <string-array name="scramble_options_array">
+        <item>自动设置所有内容，只需选择密码</item>
+        <item>根据密码自动生成行数和列数</item>
+        <item>选择行数和列数</item>
+    </string-array>
+    <string name="scramble_option_0">非常粗糙</string>
+    <string name="scramble_option_1">粗糙</string>
+    <string name="scramble_option_2">一般</string>
+    <string name="scramble_option_3">良好</string>
+    <string name="scramble_option_4">很好</string>
+
+
+    <string name="title_activity_scrambling">图像加密</string>
+    <string name="scrambling_loading">载入中...</string>
+    <string name="scrambling_quality">压缩攻击： %d</string>
+    <string name="scrambling_rearrange_image">重新排列图像</string>
+    <string name="scrambling_get_permutation">从密码获取排列</string>
+    <string name="scrambling_split_image">分割图像</string>
+    <string name="scrambling_split_image_finish">完成拆分图像</string>
+    <string name="scrambling_scramblingSaveImage_saved">保存图像</string>
+    <string name="scrambling_scramblingSaveImage_saving">保存中...</string>
+    <string name="scrambling_scramblingSaveImage_not_done">图像没有完成</string>
+    <string name="scrambling_image_widthheight">宽高</string>
+    <string name="scrambling_send_to">发送至</string>
+    <string name="scrambling_scramblingSaveText_saved">图像保存至 /Documents/imgScramble</string>
+    <string name="scrambling_widthheight_text"></string>
+    <string name="scrambling_copied_0">Copied parameters (except password) in terms of: Width Height</string>
+    <string name="scrambling_copied_1">Copied parameters (except password) in terms of: Quality Width Height</string>
+    <string name="scrambling_copied_2">Copied parameters (except password) in terms of: #rows #cols Width Height</string>
+
+
+    <string name="about_title_general">一般设置</string>
+    <string name="about_title_scramble">如何加密</string>
+    <string name="about_title_descramble">如何解密</string>
+
+    <string name="about_content_general">IMGSCRAMBLE MAY ALTER THE IMAGE DUE TO CONSTRAINTS WITH IMAGE DIMENSIONS AND THE SELECTED NUMBER OF ROW AND COLUMN.          imgScramble divides the image into selected number of rows and columns and rearrange them according to the password.          This provides a poor man\'s encryption for the image so that only people having access to the password are able to see the contents of the image.          Although using encryption solution that change the value of the image bit by bit is more secure, it cannot be decrypted after sharing through apps that uses jpeg compression.          This is a why we choose to simply scramble the image as although there are minor artifacts, the whole image can still be reproduced regardless of the fact that it went through jpeg compression.</string>
+    <string name="scramble_password">密码</string>
+    <string name="action_help">帮助关于</string>
+    <string name="about_content_scramble">1.选择您要加密的图像（或选择从相机中选择）。  2.输入您想要加密的密码。 3.选择一个选项来指定输入。  4.通过选择行数和列数，选择您想要的单个块的大小。  5.您也可以选择随机密码，行数和列数。  6.按开始。  7.您可以选择要保存的图像质量（以JPEG格式）。  8.然后您可以保存图像（通过按保存按钮）并共享（通过按分享按钮）。  9.请记住您所输入的密码来解码图像。</string>
+    <string name="about_content_descramble">1.选择您想要解密的图像。 2.选择与加密时完全相同的选项。 3.填写必要的密码，行和列。  4.选择“解密\"并点击\"开始”。 6.然后您可以查看和或保存图像。</string>
+    <string name="scrambling_scramblingShareImage_sharing">准备分享...</string>
+
+    <!--  English
+    //App name
+    <string name="app_name">imgScramble</string>
+
+
+    <string name="tab_scramble">Scramble/Descramble</string>
+    <string name="tab_about">Help/About</string>
+    <string name="action_help">Help/About</string>
+
+
+    <string name="scramble_section">Scramble an Image</string>
+    <string name="scramble_button">Start!</string>
+    <string name="scramble_password">Password</string>
+    <string name="scramble_rows"># Rows</string>
+    <string name="scramble_columns"># Cols</string>
+    <string name="scramble_random">Random</string>
+    <string name="scramble_radio_scramble">Scramble</string>
+    <string name="scramble_radio_descramble">Descramble</string>
+    <string name="scramble_show_password">Show Password</string>
+    <string name="scramble_copy_to_clipboard">Copy to Clipboard</string>
+    <string name="scramble_no_camera">Camera Not Available</string>
+    <string name="scramble_image_width_hint">Width</string>
+    <string name="scramble_image_height_hint">Height</string>
+    <string name="scramble_no_widthheight">Input Width and Height to Descramble</string>
+    <string name="scramble_option_pre">Number of Rows and Columns: %s</string>
+    <string name="scramble_options">Options: </string>
+    <string-array name="scramble_options_array">
+        <item>Set everything automatically, just pick the password</item>
+        <item>Generate number of rows and columns automatically from password</item>
+        <item>Pick number of rows and columns</item>
+    </string-array>
+    <string name="scramble_option_0">Very Coarse</string>
+    <string name="scramble_option_1">Coarse</string>
+    <string name="scramble_option_2">Normal</string>
+    <string name="scramble_option_3">Fine</string>
+    <string name="scramble_option_4">Very Fine</string>
+
+
+    <string name="title_activity_scrambling">imgScramble</string>
+    <string name="scrambling_loading">Loading</string>
+    <string name="scrambling_quality">Quality of Image: %d</string>
+    <string name="scrambling_rearrange_image">Rearranging image</string>
+    <string name="scrambling_get_permutation">Getting permutation from password</string>
+    <string name="scrambling_split_image">Splitting image</string>
+    <string name="scrambling_split_image_finish">Finished splitting image</string>
+    <string name="scrambling_scramblingSaveImage_saved">Image saved</string>
+    <string name="scrambling_scramblingSaveImage_saving">Saving &#8230;</string>
+    <string name="scrambling_scramblingSaveImage_not_done">Image not done</string>
+    <string name="scrambling_image_widthheight">WidthHeight</string>
+    <string name="scrambling_send_to">Send To</string>
+    <string name="scrambling_scramblingSaveText_saved">Image Saved as Text in /Documents/imgScramble</string>
+    <string name="scrambling_widthheight_text">You will need to input your password, row and column number. If you want to send through apps that compress images, also input\n %1$d as width and %2$d as height.</string>
+    <string name="scrambling_copied_0">Copied parameters (except password) in terms of: Width Height</string>
+    <string name="scrambling_copied_1">Copied parameters (except password) in terms of: Quality Width Height</string>
+    <string name="scrambling_copied_2">Copied parameters (except password) in terms of: #rows #cols Width Height</string>
+    <string name="scrambling_scramblingShareImage_sharing">Preparing to Share &#8230;</string>
+
+
+
+    <string name="about_title_general">General</string>
+    <string name="about_title_scramble">How to Scramble</string>
+    <string name="about_title_descramble">How to Descramble</string>
+
+    <string name="about_content_general">IMGSCRAMBLE MAY ALTER THE IMAGE DUE TO CONSTRAINTS WITH IMAGE DIMENSIONS AND THE SELECTED NUMBER OF ROW AND COLUMN.\n
+        imgScramble divides the image into selected number of rows and columns and rearrange them according to the password.
+         This provides a poor man\'s encryption for the image so that only people having access to the password are able to see the contents of the image.
+         Although using encryption solution that change the value of the image bit by bit is more secure, it cannot be decrypted after sharing through apps that uses jpeg compression.
+         This is a why we choose to simply scramble the image as although there are minor artifacts, the whole image can still be reproduced regardless of the fact that it went through jpeg compression.</string>
+    <string name="about_content_scramble">1. Select the image you want to scramble (or optionally from camera).\n
+2. Choose a password you want the scramble to be based on.\n
+3. Choose an option to specify the input.\n
+4. Choose how small the individual blocks you want to be by choosing the number of rows and columns.\n
+5. You can also choose a random password, number of rows and number of columns.\n
+6. Press Start.\n
+7. You can choose the quality of the image to save (in JPEG).\n
+8. Then you can save the image (by pressing the save button) and share (by pressing the share button).\n
+9. Please remember all the necessary inputs to descramble the image.</string>
+    <string name="about_content_descramble">1. Select the image you want to descramble.\n
+2. Use the exact same option.\n
+3. Fill in the necessary password, row and column if necessary.\n
+4. If you receive the image from apps that uses JPEG compression, also fill in the Width and Height. Images that are not received from apps that usess JPEG compression does not need the Width and Height parameters.\n
+5. Select Descramble and Start.\n
+6. You then can view and/or save the image.</string>
+-->
+</resources>
