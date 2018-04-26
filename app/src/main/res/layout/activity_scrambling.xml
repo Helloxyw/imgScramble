@@ -49,10 +49,10 @@
                 android:id="@+id/scrambling_output_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:background="#000000"
-                android:padding="1dp"
-                android:scaleType="centerInside" />
+                android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout

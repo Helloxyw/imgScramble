@@ -21,7 +21,7 @@
             android:onClick="scrambleGetImage"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:src="@drawable/add_image_z" />
         <ImageView
             android:layout_width="wrap_content"
