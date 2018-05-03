@@ -30,6 +30,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ctrctr.imgscramble.MainActivity" />
         </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="测试PSNR"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ctrctr.imgscramble.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

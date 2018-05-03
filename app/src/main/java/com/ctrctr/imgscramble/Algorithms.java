@@ -111,7 +111,6 @@ public class Algorithms {
     public static Bitmap rearrangeImageMethod(ArrayList<Bitmap> imagearray, int[] permarray, boolean scrambleboolean, int row, int col) {
         Bitmap[] rearrangedimagearray = new Bitmap[imagearray.size()];
         if (scrambleboolean) {
-            //find inverse permutation
             //找到逆置换
             int[] invpermarray = new int[permarray.length];
             for (int i = 0; i < permarray.length; i++) {

@@ -151,12 +151,6 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, SELECT_PICTURE);
     }
 
-    /**
-     * onActivityResult -- Receive the image after it is selected and post in ImageView
-     * @param requestCode SELECT_PICTURE - Take from storage, REQUEST_TAKE_PHOTO - Get from camera
-     * @param resultCode RESULT_OK - Only accepted otherwise ignore
-     * @param data Intent
-     */
     //如果想在Activity中得到新打开Activity 关闭后返回的数据，需要使用系统提供
     // 的startActivityForResult(Intent intent, int requestCode)方法打
     // 开新的Activity，新的Activity 关闭后会向前面的Activity传回数据，为了得
@@ -389,5 +383,10 @@ public class MainActivity extends AppCompatActivity {
         EditText heightedittext = (EditText) findViewById(R.id.scramble_image_height);
         widthedittext.setEnabled(true);
         heightedittext.setEnabled(true);
+    }
+
+    public void checkBER(View v){
+        Intent intent = new Intent(this, TestActivity.class);
+        startActivity(intent);
     }
 }
